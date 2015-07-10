@@ -1,5 +1,3 @@
-MAX_TEXT_LENGTH = 200
-
 class ReturnPolicy
     constructor: ({@notRefundable, @returnTerms, @paymentShipping,
         @paymentShippingOptions, @returnPolicyText, @isReturnPolicyDisabled})->
@@ -36,7 +34,6 @@ class ReturnPolicy
             @successMessage
             @formErrorMessages
             @errorMessage
-            leftSymbols: MAX_TEXT_LENGTH - @returnPolicyText.length
         }
 
 module.exports = ReturnPolicy
